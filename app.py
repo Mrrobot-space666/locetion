@@ -3,8 +3,6 @@ app = Flask(name)
 BOT_TOKEN = os.environ.get("BOT_TOKEN") CHAT_ID = os.environ.get("CHAT_ID")
 @app.route("/location", methods=["POST"]) def receive_location(): data = request.json
 Python
-
-
 latitude = data.get("latitude")
 longitude = data.get("longitude")
 accuracy = data.get("accuracy")
